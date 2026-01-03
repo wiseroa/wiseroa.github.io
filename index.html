@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구글 애즈 전문 대행 - 1:1 전담 관리 시스템</title>
+    <meta name="description" content="구글 애즈 고난이도 키워드 최적화 전문 대행. 1:1 전담 매니저 배정으로 매출 극대화. 1주일 무료 체험 제공. 카카오톡 또는 텔레그램으로 즉시 상담 신청 가능.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: #212529; background-color: #ffffff; line-height: 1.7; }
+        header { background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); color: white; padding: 1.5rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        header h1 { margin: 0; font-size: 1.6rem; text-align: center; font-weight: 500; }
+        nav { background-color: #0d6efd; padding: 0.75rem 0; text-align: center; }
+        nav a { color: white; margin: 0 1.2rem; text-decoration: none; font-weight: 400; transition: color 0.3s ease; }
+        nav a:hover { color: #ffd700; }
+        .hero { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 140px 20px 100px; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; }
+        .hero h2 { font-size: 2.8rem; margin-bottom: 1.2rem; font-weight: 700; color: white; }
+        .hero p { font-size: 1.4rem; margin-bottom: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto; color: white; }
+        .cta-primary { background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); color: #212529; padding: 18px 40px; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.2rem; box-shadow: 0 6px 18px rgba(255,193,7,0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; display: inline-block; margin: 0.8rem; }
+        .cta-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(255,193,7,0.5); }
+        .cta-kakao { background: #fee500; color: #3c1e1e; }
+        .cta-telegram { background: #0088cc; color: white; }
+        section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; text-align: center; }
+        h2 { font-size: 2.4rem; text-align: center; margin-bottom: 3rem; color: #0d6efd; font-weight: 600; }
+        .features { background: #f8f9fa; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        .feature { text-align: center; padding: 2.5rem; border-radius: 12px; background: white; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
+        .feature:hover { transform: translateY(-6px); }
+        .feature-icon { font-size: 3.5rem; margin-bottom: 1.2rem; color: #6610f2; }
+        .one-to-one { background: #e9f7ff; border-left: 6px solid #0d6efd; padding: 2.5rem; margin: 3rem auto; border-radius: 12px; max-width: 900px; }
+        .free-service { background: linear-gradient(135deg, #6610f2 0%, #0d6efd 100%); color: white; }
+        .free-service h2 { color: white; }
+        .free-service .free-highlight { background: rgba(255,255,255,0.15); padding: 3rem; border-radius: 12px; max-width: 900px; margin: 0 auto; }
+        .free-service .free-highlight h3 { color: white; }
+        .free-service .free-highlight p { color: white; }
+        .free-buttons { margin: 3rem 0; }
+        .free-trial { background: #fff3cd; padding: 3rem 0; }
+        .free-trial .free-highlight { background: rgba(255,193,7,0.15); padding: 3rem; border-radius: 12px; max-width: 900px; margin: 0 auto; }
+        .free-trial h2 { margin-bottom: 2rem; }
+        .testimonials { background: #f8f9fa; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        .testimonial { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); font-style: italic; }
+        .cases { background: white; }
+        .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-bottom: 5rem; }
+        .case { background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%); color: #212529; padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 8px 20px rgba(255,193,7,0.2); }
+        .case h3 { margin: 0 0 1rem 0; font-size: 1.4rem; }
+        .case p { margin: 0; font-size: 1.1rem; font-weight: 600; }
+        .additional-cases h2 { margin-bottom: 2rem; }
+        .additional-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+        .additional-case { text-align: center; }
+        .additional-case img { width: 100%; height: 280px; object-fit: cover; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .additional-case p { margin-top: 1rem; font-size: 1rem; color: #666; }
+        #contact { background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%); color: white; text-align: center; padding: 100px 20px; }
+        #contact h2 { color: white; }
+        #contact p { color: white; }
+        .contact-buttons { margin: 3rem 0; }
+        footer { background-color: #212529; color: #adb5bd; padding: 2.5rem; text-align: center; font-size: 0.95rem; }
+        @media (max-width: 992px) { .hero h2 { font-size: 2.4rem; } .hero p { font-size: 1.3rem; } h2 { font-size: 2.2rem; } section { padding: 60px 15px; } }
+        @media (max-width: 768px) { header h1 { font-size: 1.4rem; } nav a { margin: 0 0.8rem; font-size: 0.95rem; } .hero { padding: 120px 15px 80px; min-height: 50vh; } .hero h2 { font-size: 2rem; } .hero p { font-size: 1.2rem; } h2 { font-size: 1.8rem; } .feature-grid, .testimonial-grid, .case-grid, .additional-grid { grid-template-columns: 1fr; } .cta-primary { display: block; width: 80%; margin: 1rem auto; font-size: 1.1rem; padding: 18px 30px; } }
+        @media (max-width: 576px) { .cta-primary { padding: 16px 24px; font-size: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>구글 애즈 전문 대행: 1:1 전담 관리</h1>
+    </header>
+    <nav>
+        <a href="#home">홈</a>
+        <a href="#features">1:1 관리 시스템</a>
+        <a href="#free-trial">1주일 무료 체험</a>
+        <a href="#free">무료 서비스</a>
+        <a href="#cases">실적 사례</a>
+        <a href="#contact">문의하기</a>
+    </nav>
+    <section id="home" class="hero">
+        <h2>전문가의 1:1 관리로 구글 애즈 성과를 극대화하세요</h2>
+        <p>고난이도 키워드 최적화와 데이터 기반 전략으로 비즈니스 성장을 지원합니다. 1주일 무료 체험으로 실제 성과를 확인하세요.</p>
+        <div>
+            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="cta-primary cta-telegram" target="_blank">텔레그램으로 상담</a>
+            <a href="http://pf.kakao.com/YOUR_KAKAOTALK_ID/chat" class="cta-primary cta-kakao" target="_blank">카카오톡으로 상담</a>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <h2>1:1 전담 관리 시스템의 장점</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="feature-icon">👤</div>
+                <h3>전담 매니저 배정</h3>
+                <p>한 명의 전문가가 귀사의 계정만 집중 관리합니다. 일일 모니터링과 실시간 최적화로 최상의 결과를 도출합니다.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>고난이도 키워드 전문성</h3>
+                <p>경쟁이 치열한 키워드를 타겟으로 스마트 입찰과 반응형 광고를 활용해 ROAS를 극대화합니다.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>데이터 중심 최적화</h3>
+                <p>GA4 연동과 주간 리포트를 통해 투명한 성과 관리. 지속적인 전략 조정으로 비용 효율성을 높입니다.</p>
+            </div>
+        </div>
+        <div class="one-to-one">
+            <h3>왜 1:1 관리인가?</h3>
+            <p>대부분의 대행사는 다수의 클라이언트를 관리하지만, 우리는 클라이언트 수를 제한하여 각 비즈니스에 최적화된 깊이 있는 서비스를 제공합니다. 이는 업계 평균 대비 2배 이상의 성과 차이를 만듭니다.</p>
+        </div>
+    </section>
+    <section id="free-trial" class="free-trial">
+        <h2>1주일 무료 체험 제공</h2>
+        <div class="free-highlight">
+            <h3>실제 성과를 무료로 확인하세요</h3>
+            <p>1주일 동안 1:1 전담 매니저가 귀사 구글 애즈 계정을 무료로 관리합니다. 초기 세팅, 키워드 최적화, 배너 이미지 제작 포함. 성과 확인 후 계약 여부 결정 가능합니다.</p>
+            <p>제한된 클라이언트 수로 운영되오니 빠른 문의 부탁드립니다.</p>
+            <div class="free-buttons">
+                <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="cta-primary cta-telegram" target="_blank">텔레그램으로 무료 체험 신청</a>
+                <a href="http://pf.kakao.com/YOUR_KAKAOTALK_ID/chat" class="cta-primary cta-kakao" target="_blank">카카오톡으로 무료 체험 신청</a>
+            </div>
+        </div>
+    </section>
+    <section id="free" class="free-service">
+        <h2>무료 서비스</h2>
+        <div class="free-highlight">
+            <h3>추가 무료 지원</h3>
+            <p>문의 시 배너 이미지 무료 제작 및 초기 컨설팅 제공. 상세 내용은 상담을 통해 안내드립니다.</p>
+        </div>
+        <div class="free-buttons">
+            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="cta-primary cta-telegram" target="_blank">텔레그램 상담 시작</a>
+            <a href="http://pf.kakao.com/YOUR_KAKAOTALK_ID/chat" class="cta-primary cta-kakao" target="_blank">카카오톡 상담 시작</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>클라이언트 후기</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"1:1 관리 덕분에 광고 효율이 크게 향상되었습니다. 전문적인 접근이 인상적입니다."</p>
+                <cite>- 쇼핑몰 운영자</cite>
+            </div>
+            <div class="testimonial">
+                <p>"전담 매니저의 세밀한 최적화로 비용을 절감하고 매출을 증가시켰습니다."</p>
+                <cite>- B2B 기업 대표</cite>
+            </div>
+            <div class="testimonial">
+                <p>"상담 후 즉시 성과를 느꼈습니다. 추천합니다."</p>
+                <cite>- IT 서비스 업체</cite>
+            </div>
+        </div>
+    </section>
+    <section id="cases" class="cases">
+        <h2>검증된 실적 사례</h2>
+        <div class="case-grid">
+            <div class="case">
+                <h3>온라인 쇼핑몰</h3>
+                <p>매출 150% 증가<br>전환율 60% 향상</p>
+            </div>
+            <div class="case">
+                <h3>B2B 서비스</h3>
+                <p>문의량 200% 증가<br>광고 비용 65% 절감</p>
+            </div>
+            <div class="case">
+                <h3>유튜브 채널</h3>
+                <p>ROAS 4.5배 달성<br>신규 구독자 180% 증가</p>
+            </div>
+        </div>
+
+        <!-- 실제 성과 증거 섹션 -->
+        <div class="additional-cases">
+            <h2>실제 성과</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem;">Google Ads 대시보드 및 그래프 캡처 (개인정보 보호 처리 완료)</p>
+            <div class="additional-grid">
+                <div class="additional-case">
+                    <img src="https://i.ifh.cc/HxwvJy.png" alt="성과 증거 이미지 1">
+                    <p>소x결x</p>
+                </div>
+                <div class="additional-case">
+                    <img src="https://i.ifh.cc/XvLppM.png" alt="성과 증거 이미지 2">
+                    <p>도x류</p>
+                </div>
+                <div class="additional-case">
+                    <img src="https://i.ifh.cc/85cqPg.png" alt="성과 증거 이미지 3">
+                    <p>작x</p>
+                </div>
+                <div class="additional-case">
+                    <img src="https://i.ifh.cc/8dYbHf.png" alt="성과 증거 이미지 4">
+                    <p>레x</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>즉시 상담 신청</h2>
+        <p>카카오톡 또는 텔레그램으로 편리하게 문의하세요. 10분 내 응답 보장.</p>
+        <div class="contact-buttons">
+            <a href="http://pf.kakao.com/YOUR_KAKAOTALK_ID/chat" class="cta-primary cta-kakao" target="_blank">카카오톡 1:1 상담</a>
+            <a href="https://t.me/YOUR_TELEGRAM_USERNAME" class="cta-primary cta-telegram" target="_blank">텔레그램 1:1 상담</a>
+        </div>
+        <p style="margin-top: 3rem; font-size: 1.1rem;">전문 컨설턴트가 기다리고 있습니다.</p>
+    </section>
+    <footer>
+        <p>상호: 구글 애즈 전문 대행 | 대표: 홍길동 | 사업자등록번호: 123-45-67890 | 주소: 서울특별시 강남구 테헤란로 123, 7층</p>
+        <p>통신판매업신고: 2025-서울강남-0001 | 개인정보 보호책임자: 홍길동</p>
+        <p>&copy; 2025 구글 애즈 전문 대행. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
